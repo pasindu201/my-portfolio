@@ -24,8 +24,8 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="hover:text-gray-400">
-            Contact
+          <Link to="/experiance" className="hover:text-gray-400">
+            Experiance
           </Link>
         </li>
         <li>

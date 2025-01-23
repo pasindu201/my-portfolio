@@ -1,30 +1,35 @@
 import React from "react";
+import UOM_LOGO from "./../assets/uom_logo.png";
+import COURSERA_LOGO from "./../assets/coursera.png";
+import LINK_IN_LOGO from "./../assets/linked-in.png";
 
 const EducationAndCertificates = () => {
   const certifications = [
     {
-      title: "Cryptography 1",
-      organization: "Coursera - University of Stanford",
-    },
-    {
       title: "Machine Learning",
       organization: "Coursera - University of Stanford",
-    },
-    {
-      title: "Industrial IoT on Google Cloud",
-      organization: "Coursera - Google",
-    },
-    {
-      title: "Software Processes and Agile Practices",
-      organization: "Coursera - University of Alberta",
+      certificateURL: "https://coursera.org/verify/XYZ123",
+      logo: COURSERA_LOGO,
     },
     {
       title: "Data Structure and Algorithm",
       organization: "Coursera - University of California San Diego",
+      logo: COURSERA_LOGO,
     },
     {
-      title: "Responsive Website Basics: HTML, CSS, JS",
+      title: "Advanced C Programming: Optimizing Performance and Efficiency",
+      organization: "LinkedIn Learning",
+      logo: LINK_IN_LOGO,
+    },
+    {
+      title: "C# Learning",
+      organization: "LinkedIn Learning",
+      logo: LINK_IN_LOGO,
+    },
+    {
+      title: "Deep Learning",
       organization: "Coursera - University of London",
+      logo: COURSERA_LOGO,
     },
   ];
 
@@ -33,25 +38,14 @@ const EducationAndCertificates = () => {
       {/* Section: Education */}
       <section className="mb-16">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
-          {/* Icon/Graphic */}
-          <div className="flex-1 flex justify-center mb-8 md:mb-0">
-            <img
-              src="https://via.placeholder.com/300" // Replace with your graduation cap image URL
-              alt="Graduation Cap"
-              className="w-72"
-            />
-          </div>
           {/* Text */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl font-bold mb-4">Education</h1>
-            <h2 className="text-xl font-semibold mb-4">
-              Achievements and Certifications
-            </h2>
             <ul className="text-gray-400 space-y-2">
-              <li>🎓 GCE A/L examination with island rank 201.</li>
+              <li>🎓 GCE A/L examination with island rank 261.</li>
               <li>
                 🎓 B.Sc. Engineering (Hons) in Electronic and Telecommunication
-                Engineer (3.86 CGPA - 1st Class).
+                Engineer (In progress).
               </li>
             </ul>
           </div>
@@ -61,29 +55,33 @@ const EducationAndCertificates = () => {
       {/* Section: Degrees */}
       <section className="mb-16">
         <h1 className="text-4xl font-bold text-center mb-8">Degrees</h1>
-        <div className="container mx-auto flex flex-col md:flex-row items-center bg-pink-500 text-black p-6 rounded-lg shadow-lg">
-          <div className="flex-1 flex justify-center mb-8 md:mb-0">
-            <img
-              src="https://via.placeholder.com/150" // Replace with your degree logo URL
-              alt="University Logo"
-              className="w-32 rounded-full"
-            />
-          </div>
-          <div className="flex-1">
+        <div className="container mx-auto w-[70%] flex flex-col bg-pink-500 text-black ">
+          <div>
             <h2 className="text-2xl font-bold">
-              M.Sc. in Computer Science (Reading)
+              B.Sc.(Hons) in Electronic and Telecommunication Engineering (In
+              progress)
             </h2>
             <p className="text-lg mb-4">2024 - Present</p>
-            <h3 className="text-lg font-semibold mb-2">Course Details</h3>
-            <ul className="list-disc list-inside space-y-2">
-              <li>⚡ Software System Design</li>
-              <li>⚡ Enterprise Software Architectures</li>
-              <li>⚡ Quality Engineering</li>
-              <li>⚡ Requirements Engineering</li>
-              <li>⚡ Distributed Computing</li>
-              <li>⚡ Advanced Database Management Systems</li>
-              <li>⚡ Software Security</li>
-            </ul>
+          </div>
+          <div className="container mx-auto flex flex-row items-centerp-6 rounded-lg shadow-lg">
+            <div className="flex-1 flex justify-center w-[70%]">
+              <img
+                src={UOM_LOGO}
+                alt="University Logo"
+                className="w-40 rounded-xl"
+              />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold mb-2">Course Details</h3>
+              <ul className="list-disc list-inside space-y-2">
+                <li>⚡ Data Structures and Algorithms</li>
+                <li>⚡ Modulo Software Design</li>
+                <li>⚡ Software Design Competition</li>
+                <li>⚡ Deep learning for vision</li>
+                <li>⚡ Computer organization and design</li>
+                <li>⚡ Internet of Things</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -98,9 +96,9 @@ const EducationAndCertificates = () => {
               className="bg-gray-800 text-center p-4 rounded-lg shadow-lg hover:shadow-xl transition"
             >
               <img
-                src="https://via.placeholder.com/100" // Replace with your certification logo URL
+                src={cert.logo}
                 alt={cert.title}
-                className="mx-auto mb-4 w-20"
+                className="mx-auto mb-4 w-20 rounded-full"
               />
               <h3 className="text-xl font-semibold">{cert.title}</h3>
               <p className="text-gray-400">{cert.organization}</p>

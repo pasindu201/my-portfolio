@@ -1,62 +1,51 @@
 import React from "react";
-
-// Importing icons (you can use images, SVGs, or Font Awesome icons)
-import {
-  FaJava,
-  FaPython,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaAngular,
-  FaNodeJs,
-} from "react-icons/fa";
-import { SiFlask, SiHeroku, SiArduino } from "react-icons/si";
+import React_logo from "./../assets/react_logo.png";
+import SwiftUI_logo from "./../assets/swiftUi.png";
+import Cpp_logo from "./../assets/cpp_logo.png";
+import SpringBoot_logo from "./../assets/spring_boot.png";
+import Flutter_logo from "./../assets/flutter_logo.png";
+import MySQL_logo from "./../assets/mysql.png";
+import FireBase_logo from "./../assets/firebase.png";
+import GoogleMaps_logo from "./../assets/google_maps_logo.png";
+import Bluetooth_logo from "./../assets/bluetooth.png";
 
 const Projects = () => {
   const projectList = [
     {
-      title: "Invoice Keeper",
+      title: "BHS Data Management System",
       description:
-        "This is a Java-based software which uses MySQL database. It’s an Invoice Inventory System currently operating in two shops in Rathnapura and Awissawella. (Client Project)",
-      technologies: [<FaJava key="java" />],
+        "Data management system for a Baggage Handling System (BHS) to monitor and control baggage flow and system operations. For Katunayake International Airport, Sri Lanka.",
+      technologies: [React_logo],
     },
     {
-      title: "Multicore Processor using Verilog",
+      title: "Flower Stock Exchange",
       description:
-        "We designed an FPGA-based custom microprocessor with 4 cores, which can be used to speed up matrix multiplication using parallel processing.",
-      technologies: [<FaPython key="python" />],
+        "Engineered a real-time stock trading and exchange platform as part of the C++ Workshop hosted by the London Stock Exchange Group. Integrated virtual client-server communication using sockets, ensuring robust system performance.",
+      technologies: [Cpp_logo],
     },
     {
-      title: "Official Website of ENTC",
+      title: "Hitech Connect Mobile App",
       description:
-        "Me and a team of eight developers built the official website of the Electronic and Telecommunication Engineering Department. I lead the team.",
-      technologies: [
-        <FaHtml5 key="html" />,
-        <FaCss3Alt key="css" />,
-        <FaJs key="js" />,
-      ],
+        "Mobile application integrating with Bluetooth features. The app connects to a Bluetooth device, enabling control of internal systems in a caravan, such as fans, lights, and receiving sensor data.",
+      technologies: [Flutter_logo, FireBase_logo, Bluetooth_logo],
     },
     {
-      title: "Easy POS",
+      title: "Hitech Connect Firmware and Development",
       description:
-        "This is a complete, compact Point of Sales system built with Raspberry Pi, a 10-inch touch screen, and a thermal printer.",
-      technologies: [
-        <FaAngular key="angular" />,
-        <SiFlask key="flask" />,
-        <FaPython key="python" />,
-      ],
+        "Developed firmware using PlatformIO to enable connection with a mobile application. Designed and prototyped a circuit to control lights and fans, as well as measure water levels, temperature, and battery voltage.",
+      technologies: [],
     },
     {
-      title: "Whether Chart",
+      title: "Tourist Utility App",
       description:
-        "This is a client project for the Maribyrnong City Council, Australia. The project is a dashboard and backend API hosted on Heroku (Client Project).",
-      technologies: [<FaNodeJs key="node" />, <SiHeroku key="heroku" />],
+        "This is a client project for the Maribyrnong City Council, Australia. The project is a dashboard and backend API hosted on Heroku.",
+      technologies: [SwiftUI_logo],
     },
     {
-      title: "GetXchange",
+      title: "Transport Application",
       description:
         "It's an IoT-based system that can be used for foreign exchange market day-traders, providing email and buzzer notifications along with a mobile UI.",
-      technologies: [<SiArduino key="arduino" />, <FaJs key="js" />],
+      technologies: [Flutter_logo, FireBase_logo, GoogleMaps_logo],
     },
   ];
 
@@ -82,9 +71,11 @@ const Projects = () => {
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-400 mb-4">{project.description}</p>
               {/* Technologies */}
-              <div className="flex gap-2 text-2xl text-gray-300">
-                {project.technologies.map((icon, i) => (
-                  <span key={i}>{icon}</span>
+              <div className="flex gap-4 mt-4">
+                {project.technologies.map((tech, i) => (
+                  <div key={i} className="flex items-center space-x-2">
+                    <img src={tech} className="w-8 h-8" />
+                  </div>
                 ))}
               </div>
             </div>

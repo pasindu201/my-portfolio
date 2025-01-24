@@ -12,15 +12,12 @@ const Home = () => {
       <div className="max-w-4xl text-center">
         {/* Greeting */}
         <h1 className="text-4xl sm:text-5xl font-bold">
-          Hi There, I'm <span className="text-pink-500">[Your Name]</span>
+          Hi There, I'm <span className="text-pink-500">Pasindu Sandeep</span>
         </h1>
         <p className="text-lg sm:text-xl mt-4 text-gray-300">
           A passionate <span className="text-pink-500">Software Engineer</span>{" "}
           specializing in creating efficient, scalable, and user-friendly
-          solutions. I build amazing things with{" "}
-          <span className="text-blue-400">React</span>,{" "}
-          <span className="text-yellow-500">JavaScript</span>, and{" "}
-          <span className="text-green-400">Node.js</span>.
+          solutions.
         </p>
 
         {/* Buttons */}
@@ -30,12 +27,6 @@ const Home = () => {
             className="bg-pink-500 hover:bg-pink-600 text-white py-2 px-6 rounded-full font-medium transition"
           >
             View Projects
-          </a>
-          <a
-            href="/contact"
-            className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-6 rounded-full font-medium transition"
-          >
-            Contact Me
           </a>
         </div>
 
@@ -55,7 +46,7 @@ const Home = () => {
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center"
           >
-            <FontAwesomeIcon icon={faGithub} className="text-xl" />
+            <FontAwesomeIcon icon={faLinkedin} className="text-xl" />
           </a>
           <a
             href="https://twitter.com"

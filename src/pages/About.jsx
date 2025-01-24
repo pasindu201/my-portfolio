@@ -5,7 +5,6 @@ const About = () => {
     "JavaScript",
     "React.js",
     "Node.js",
-    "Express.js",
     "Python",
     "Django",
     "HTML",
@@ -15,12 +14,14 @@ const About = () => {
     "MongoDB",
     "Git",
     "REST APIs",
-    "Agile Development",
-    "CI/CD",
+    "C/C++",
+    "Java",
+    "Ubuntu",
+    "SwiftUI",
   ];
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen py-16 px-6">
+    <div className="bg-gray-900 text-white min-h-screen py-20 px-6">
       <div className="container mx-auto">
         {/* About Section */}
         <section className="mb-16">

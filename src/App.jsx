@@ -11,6 +11,10 @@ import HitechConnectMobile from "./pages/HitechConnectMobile";
 import HitechConnectFirmware from "./pages/HitechConnectFirmware";
 import TransportApplication from "./pages/TransportApplication";
 import TouristUtilityApp from "./pages/TouristUtilityApp";
+import FitZone from "./pages/FitZone";
+import MCQ_quiz from "./pages/MCQ_quiz";
+import MediConnect from "./pages/MediConnect";
+import BeMyVoice from "./pages/BeMyVoice";
 
 export default function App() {
   return (
@@ -35,10 +39,7 @@ export default function App() {
             path="/projects/hitech-connect-mobile"
             element={<HitechConnectMobile />}
           />
-          <Route
-            path="/projects/hitech-connect-firmware"
-            element={<HitechConnectFirmware />}
-          />
+          <Route path="/projects/be-my-voice" element={<BeMyVoice />} />
           <Route
             path="/projects/tourist-utility-app"
             element={<TouristUtilityApp />}
@@ -47,6 +48,9 @@ export default function App() {
             path="/projects/transport-application"
             element={<TransportApplication />}
           />
+          <Route path="/projects/fit-zone" element={<FitZone />} />
+          <Route path="/projects/mcq-quiz" element={<MCQ_quiz />} />
+          <Route path="/projects/medi-connect" element={<MediConnect />} />
         </Routes>
       </div>
     </BrowserRouter>

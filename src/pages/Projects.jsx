@@ -9,6 +9,9 @@ import MySQL_logo from "./../assets/mysql.png";
 import FireBase_logo from "./../assets/firebase.png";
 import GoogleMaps_logo from "./../assets/google_maps_logo.png";
 import Bluetooth_logo from "./../assets/bluetooth.png";
+import LTSpice_logo from "./../assets/ltspice.png";
+import Altium from "./../assets/altium.png";
+import SW from "./../assets/sw.png";
 
 const Projects = () => {
   const navigate = useNavigate();
@@ -31,14 +34,14 @@ const Projects = () => {
     {
       title: "Hitech Connect Mobile App",
       description:
-        "Mobile application integrating with Bluetooth features. The app connects to a Bluetooth device, enabling control of internal systems in a caravan, such as fans, lights, and receiving sensor data.",
+        "Mobile application integrating with Bluetooth features. The app connects to a Bluetooth device, enabling control of internal systems in a caravan, such as fans, lights, and receiving sensor data.(client project-Australia)",
       technologies: [Flutter_logo, FireBase_logo, Bluetooth_logo],
       route: "/projects/hitech-connect-mobile",
     },
     {
       title: "Hitech Connect Firmware and Development",
       description:
-        "Developed firmware using PlatformIO to enable connection with a mobile application. Designed and prototyped a circuit to control lights and fans, as well as measure water levels, temperature, and battery voltage.",
+        "Developed firmware using PlatformIO to enable connection with a mobile application. Designed and prototyped a circuit to control lights and fans, as well as measure water levels, temperature, and battery voltage.(client project)",
       technologies: [],
       route: "/projects/hitech-connect-firmware",
     },
@@ -55,6 +58,48 @@ const Projects = () => {
         "It's an IoT-based system that can be used for foreign exchange market day-traders, providing email and buzzer notifications along with a mobile UI.",
       technologies: [Flutter_logo, FireBase_logo, GoogleMaps_logo],
       route: "/projects/transport-application",
+    },
+    {
+      title: "Fit Zone",
+      description:
+        "A fitness application that provides a platform for users to share their workout planes, meal planes with others. Also buying and selling platform for supplements. The Website also allows users to track their fitness progress and set fitness goals.",
+      technologies: [React_logo, SpringBoot_logo, MySQL_logo],
+      route: "/projects/fit-zone",
+    },
+    {
+      title: "MCQ Quiz",
+      description:
+        "A multiple-choice question quiz application that allows users to create quizzes, share them with others. The application also provides a leaderboard to track user scores.",
+      technologies: [React_logo, SpringBoot_logo, MySQL_logo],
+      route: "/projects/mcq-quiz",
+    },
+    {
+      title: "Multistage Lead Acid Battery Charger",
+      description:
+        "An analog electronic project. We developed a charger that charges lead acid battery in dual stage charging mechanism. Constant current mode and constant voltage mode.",
+      technologies: [LTSpice_logo, Altium, SW],
+      route: "/projects/mcq-quiz",
+    },
+    {
+      title: "Soil Monitoring System",
+      description:
+        "The project aims to empower farmers with precise fertilization and irrigation decisions by utilizing IoT-based soil monitoring devices that collect real-time data on vital soil parameters and displayed then on Node red dashboard.",
+      technologies: [],
+      route: "/projects/soil-monitoring-system",
+    },
+    {
+      title: "Medi-Connect",
+      description:
+        "The project aims to empower farmers with precise fertilization and irrigation decisions by utilizing IoT-based soil monitoring devices that collect real-time data on vital soil parameters and displayed then on Node red dashboard.",
+      technologies: [Flutter_logo, FireBase_logo],
+      route: "/projects/medi-connect",
+    },
+    {
+      title: "Be My Voice Mobile App",
+      description:
+        "Mobile application specially created to use for deaf Students to identify common sounds. Integrated with google map api to track their location by care takers.",
+      technologies: [Flutter_logo, FireBase_logo, GoogleMaps_logo],
+      route: "/projects/be-my-voice",
     },
   ];
 

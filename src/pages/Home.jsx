@@ -5,14 +5,25 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import Profile_pic from "../assets/profile.jpg";
 
 const Home = () => {
   return (
     <section className="bg-gray-900 text-white min-h-screen flex items-center justify-center px-8">
       <div className="max-w-4xl text-center">
+        <div className="flex justify-center mb-4">
+          <img
+            src={Profile_pic}
+            className="w-32 h-32 object-contain rounded-full"
+          />
+        </div>
         {/* Greeting */}
         <h1 className="text-4xl sm:text-5xl font-bold">
           Hi There, I'm <span className="text-pink-500">Pasindu Sandeep</span>
+        </h1>
+        <h1 className="mt-2">
+          🎓 B.Sc. Engineering (Hons) in Electronic and Telecommunication
+          Engineering
         </h1>
         <p className="text-lg sm:text-xl mt-4 text-gray-300">
           A passionate <span className="text-pink-500">Software Engineer</span>{" "}

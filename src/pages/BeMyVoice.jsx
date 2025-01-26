@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-const TouristUtilityApp = () => {
+const BeMyVoice = () => {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
     const importImages = async () => {
       const context = [
-        import("../assets/Tourist App Images/1.jpg"),
-        import("../assets/Tourist App Images/2.jpg"),
-        import("../assets/Tourist App Images/3.jpg"),
-        import("../assets/Tourist App Images/4.jpg"),
+        import("../assets/BeMyVoice/1.jpg"),
+        import("../assets/BeMyVoice/2.jpg"),
+        import("../assets/BeMyVoice/3.jpg"),
       ];
 
       const resolvedImages = await Promise.all(context);
@@ -24,12 +23,15 @@ const TouristUtilityApp = () => {
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold mb-4">Tourist Utility App</h1>
         <p className="text-gray-400">
-          Detailed information about the TouristUtilityApp...
+          Be My Voice is a mobile application designed to enhance safety of deaf
+          individuals. It use deeplearning to sound recognition and provide
+          real-time alerts. Additionally, the app offers a location tracking
+          feature for caregivers to monitor deaf users.
         </p>
       </div>
       <div className="mt-8">
         <a
-          href="https://github.com/pasindu201/TouristUtilityApp"
+          href="https://github.com/pasindu201/DeafAware-MobileAPP"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition duration-300 inline-flex items-center"
@@ -46,13 +48,13 @@ const TouristUtilityApp = () => {
         </a>
       </div>
       {/* Images Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 mt-8">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Transport ${index}`}
-            className="w-full h-auto rounded-lg shadow-md hover:shadow-lg transition"
+            className="w-full h-auto shadow-md hover:shadow-lg transition"
           />
         ))}
       </div>
@@ -60,4 +62,4 @@ const TouristUtilityApp = () => {
   );
 };
 
-export default TouristUtilityApp;
+export default BeMyVoice;
